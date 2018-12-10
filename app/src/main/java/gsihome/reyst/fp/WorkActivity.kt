@@ -14,8 +14,12 @@ class WorkActivity : SecuredActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_work)
 
-        binding.btnNext.setOnClickListener {
+        binding.btnNext1.setOnClickListener {
             EmptyActivity.start(this)
+        }
+
+        binding.btnNext2.setOnClickListener {
+            BasicActivity.start(this)
         }
 
     }

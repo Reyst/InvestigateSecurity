@@ -4,4 +4,5 @@
     <string name="create_pin">Create new PIN</string>
     <string name="start_next">Start next</string>
     <string name="enter_pin">Enter PIN</string>
+    <string name="title_activity_basic">BasicActivity</string>
 </resources>

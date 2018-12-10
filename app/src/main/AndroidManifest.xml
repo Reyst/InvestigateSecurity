@@ -4,13 +4,13 @@
     package="gsihome.reyst.fp">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".App"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,6 +21,15 @@
         </activity>
         <activity android:name=".WorkActivity" />
         <activity android:name=".EmptyActivity" />
+        <activity
+            android:name=".BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:parentActivityName=".WorkActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gsihome.reyst.fp.WorkActivity" />
+        </activity>
     </application>
 
 </manifest>
